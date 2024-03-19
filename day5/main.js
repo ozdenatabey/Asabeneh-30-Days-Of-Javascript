@@ -53,3 +53,58 @@ console.log(`Max age is ${ages[ages.length - 1]}`);
 console.log(
   `Median age is ${(ages[ages.length / 2] + ages[ages.length / 2 - 1]) / 2}`
 );
+let total =
+  ages[0] +
+  ages[1] +
+  ages[2] +
+  ages[3] +
+  ages[4] +
+  ages[5] +
+  ages[6] +
+  ages[7] +
+  ages[8] +
+  ages[9];
+let average = total / ages.length;
+console.log(`Average age is ${average}`);
+console.log(`Range of ages is ${ages[9] - ages[0]}`);
+console.log(`Min average is ${Math.abs(ages[0] - average)}`);
+console.log(`Max average is ${Math.abs(ages[9] - average)}`);
+
+console.log(`Countries are: ${countries}`);
+if (countries.length % 2 == 0) {
+  console.log(
+    `Middle country(ies): ${countries[(countries.length - 1) / 2]},${
+      countries[(countries.length + 1) / 2]
+    }`
+  );
+} else {
+  console.log(`Middle country(ies): ${countries[(countries.length - 1) / 2]}`);
+}
+
+if (countries.length % 2 == 0) {
+  console.log(
+    `First half of countries are: ${countries.slice(
+      0,
+      countries.length / 2 - 1
+    )}`
+  );
+  console.log(
+    `Second half of countries are: ${countries.slice(
+      countries.length / 2 - 1,
+      countries.length - 1
+    )}`
+  );
+} else {
+  console.log(
+    `First half of countries are: ${countries.slice(
+      0,
+      (countries.length + 1) / 2
+    )}`
+  );
+  console.log(
+    `Second half of countries are: ${countries.slice(
+      (countries.length + 1) / 2,
+      countries.length
+    )}`
+  );
+}
