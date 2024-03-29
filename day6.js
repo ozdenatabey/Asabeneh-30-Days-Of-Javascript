@@ -46,3 +46,82 @@ for (let i = 0; i <= 5; i++) {
 }
 
 // Exercises Level 1
+
+console.log("Exercise Level 1");
+
+const countries = [
+  "Albania",
+  "Bolivia",
+  "Canada",
+  "Denmark",
+  "Ethiopia",
+  "Finland",
+  "Germany",
+  "Hungary",
+  "Ireland",
+  "Japan",
+  "Kenya",
+];
+
+const webTechs = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React",
+  "Redux",
+  "Node",
+  "MongoDB",
+];
+
+const mernStack = ["MongoDB", "Express", "React", "Node"];
+
+for (let i = 0; i <= 10; i++) {
+  console.log(i);
+}
+
+let i = 0;
+while (i <= 10) {
+  console.log(i);
+  i++;
+}
+i = 0;
+
+do {
+  console.log(i);
+  i++;
+} while (i <= 10);
+
+let str = "";
+for (let i = 0; i <= 7; i++) {
+  str += "#";
+  console.log(str);
+}
+
+i = 0;
+while (i <= 10) {
+  console.log(`${i} x ${i} = ${i * i}`);
+  i++;
+}
+
+console.log("i  i^2  i^3");
+for (let i = 0; i <= 10; i++) {
+  console.log(`${i}  ${i * i}  ${i * i * i}`);
+}
+
+i = 0;
+while (i <= 100) {
+  if (i % 2 == 0) {
+    console.log(i);
+  }
+  i++;
+}
+
+i = 0;
+while (i <= 100) {
+  if (i % 2 == 1) {
+    console.log(i);
+  }
+  i++;
+}
+
+// 9 numaralı soruda kaldım
