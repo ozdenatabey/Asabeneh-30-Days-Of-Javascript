@@ -124,4 +124,68 @@ while (i <= 100) {
   i++;
 }
 
-// 9 numaralı soruda kaldım
+console.log("---------------");
+
+for (let sayi = 2; sayi <= 100; sayi++) {
+  let prime = true;
+  for (let k = 2; k < sayi; k++) {
+    if (sayi % k === 0) {
+      prime = false;
+      break;
+    }
+  }
+  if (prime) {
+    console.log(sayi);
+  }
+}
+
+console.log("---------------");
+
+let total = 0;
+let number = 0;
+for (number = 0; number <= 100; number++) {
+  total = total + number;
+}
+console.log(`The sum of 0 to ${number - 1} is ${total}`);
+
+console.log("---------------");
+
+number = 0;
+let evenTotal = 0;
+let oddTotal = 0;
+for (number = 0; number <= 100; number++) {
+  if (number % 2 == 0) {
+    evenTotal += number;
+  } else {
+    oddTotal += number;
+  }
+}
+console.log(
+  `The sum of all evens from 0 to ${
+    number - 1
+  } is ${evenTotal}. And the sum of all odds from 0 to ${
+    number - 1
+  } is ${oddTotal}`
+);
+
+let totals = [];
+totals.push(evenTotal);
+totals.push(oddTotal);
+console.log(totals);
+
+console.log("---------------");
+
+let arr = [];
+i = 0;
+while (i < 5) {
+  let sayi = Math.floor(Math.random() * 10);
+  if (arr.includes(sayi)) {
+    continue;
+  } else {
+    arr.push(sayi);
+  }
+  i++;
+}
+console.log(arr);
+
+// 15. soruda kaldım
